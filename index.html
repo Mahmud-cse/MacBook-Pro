@@ -27,20 +27,26 @@
                         4 ports Magic Mouse Magic Keyboard -US English </p>
                     <h5>Memory</h5>
                     <div class="mb-5">
-                        <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button id="memory-first" type="button" class="btn btn-outline-secondary">8GB unified
+                            memory</button>
+                        <button id="memory-second" type="button" class="btn btn-outline-secondary">16GB unified
+                            memory</button>
                     </div>
                     <h5>Storage</h5>
                     <div class="mb-5">
-                        <button type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+                        <button id="ssd-first" type="button" class="btn btn-outline-secondary">256GB SSD
+                            storage</button>
+                        <button id="ssd-second" type="button" class="btn btn-outline-secondary">512GB SSD
+                            storage</button>
+                        <button id="ssd-third" type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
                     </div>
                     <h5>Choose your delivery option</h5>
                     <div class="mb-5">
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime
+                        <button id="first-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE
+                            Prime
                             Delivery</button>
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge
+                        <button id="second-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 21
+                            Delivery charge
                             $20</button>
                     </div>
                     <div class="row mb-5">
@@ -53,10 +59,10 @@
                         </div>
                         <div class="col-2">
                             <h5 class="border-bottom">$1299</h5>
-                            <h5 class="border-bottom">$0</h5>
-                            <h5 class="border-bottom">$0</h5>
-                            <h5 class="border-2 border-dark border-bottom">$0</h5>
-                            <h5 class="border-bottom">$1299</h5>
+                            <h5 class="border-bottom">$<span id="memory-money-all">0</span></h5>
+                            <h5 class="border-bottom">$<span id="storage-money-all">0</span></h5>
+                            <h5 class="border-2 border-dark border-bottom">$<span id="delivery-money-all">0</span></h5>
+                            <h5 class="border-bottom">$<span id="money-add-all">1299</span></h5>
                         </div>
                         <div class="mt-5 d-flex ">
                             <input type="text" name="" id="">
