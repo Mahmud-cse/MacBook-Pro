@@ -14,6 +14,7 @@ function setTotal(){
 
     let total=firstValue+secondValue+thirdValue+1299;
     document.getElementById('money-add-all').innerText=total;
+    document.getElementById('money-add-all-final').innerText=total;
 }
 
 // memory
@@ -45,6 +46,19 @@ document.getElementById('first-delivery').addEventListener('click',function(){
 document.getElementById('second-delivery').addEventListener('click',function(){
     setAll('delivery',20);
 })
+
+// pomo code
+document.getElementById('apply').addEventListener('click',function(){
+    const value=document.getElementById('input').value;
+    if(value.toLowerCase()=='stevekaku'){
+        let total=document.getElementById('money-add-all');
+        let newValue=parseInt(total.innerText)*0.2;
+        let finalValue=parseInt(total.innerText)-newValue;
+
+        document.getElementById('money-add-all-final').innerText=finalValue;
+    }
+})
+
 
 
 

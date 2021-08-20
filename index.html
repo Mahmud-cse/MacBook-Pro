@@ -9,8 +9,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
 
     <title>Mac Book Pro</title>
 </head>
@@ -19,12 +17,17 @@
     <main>
         <div class="container mt-5 mb-3">
             <div class="row gx-5 border-bottom">
+                <!-- image -->
                 <div class="col-6"><img class="img-fluid" src="images/mac.png" alt="mac image"></div>
+
+                <!-- text -->
                 <div class="col-6">
                     <h1>Customize your Blue 24-inch iMac with Apple M1 chip. </h1>
                     <p class="mb-5">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,
                         7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB
                         4 ports Magic Mouse Magic Keyboard -US English </p>
+
+                    <!-- options -->
                     <h5>Memory</h5>
                     <div class="mb-5">
                         <button id="memory-first" type="button" class="btn btn-outline-secondary">8GB unified
@@ -49,6 +52,8 @@
                             Delivery charge
                             $20</button>
                     </div>
+
+                    <!-- price -->
                     <div class="row mb-5">
                         <div class="col-4">
                             <h5 class="border-bottom">Best Price</h5>
@@ -64,14 +69,16 @@
                             <h5 class="border-2 border-dark border-bottom">$<span id="delivery-money-all">0</span></h5>
                             <h5 class="border-bottom">$<span id="money-add-all">1299</span></h5>
                         </div>
-                        <div class="mt-5 d-flex ">
-                            <input type="text" name="" id="">
-                            <button type="button" class="btn btn-danger btn-sm">Apply</button>
+                        <p class="mt-4">Add Pomo code</p>
+                        <div class="d-flex">
+                            <input type="text" name="" id="input">
+                            <button id="apply" type="button" class="btn btn-danger btn-sm">Apply</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <h1 class="d-flex justify-content-center align-items-center mt-3">Total: $1299</h1>
+            <h1 class="d-flex justify-content-center align-items-center mt-3">Total: $<span
+                    id="money-add-all-final">1299</span></h1>
         </div>
     </main>
 
